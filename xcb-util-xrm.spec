@@ -1,11 +1,11 @@
 Summary:	XCB util-xrm module
 Name:		xcb-util-xrm
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	https://github.com/Airblader/xcb-util-xrm/releases/download/v%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	242dfd4af757fc5ca0e952a714b9606a
+# Source0-md5:	6b5249f1e4e4e1c5e367d894d27dd0c0
 URL:		https://github.com/Airblader/xcb-util-xrm
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake
