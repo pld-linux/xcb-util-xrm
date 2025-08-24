@@ -1,4 +1,5 @@
 Summary:	XCB util-xrm module
+Summary(pl.UTF-8):	Moduł XCB util-xrm
 Name:		xcb-util-xrm
 Version:	1.3
 Release:	1
@@ -30,8 +31,20 @@ the X protocol but which have traditionally been provided by Xlib.
 XCB util-xrm module provides the following library:
 - xrm: utility functions for the X resource manager
 
+%description -l pl.UTF-8
+xcb-util udostępnia wiele bibliotek opartych powyżej libxcb (głównej
+biblioteki protokołu X) oraz trochę bibliotek rozszerzeń. Te
+eksperymentalne biblioteki udostępniają wygodne funkcje i interfejsy
+czyniące surowy protokół X bardziej używalnym. Niektóre biblioteki
+udostępniają także kod kliencki nie będący ściśle częścią protokołu X,
+ale tradycyjnie dostarczany przez Xlib.
+
+Moduł XCB util-xrm dostarcza bibliotekę:
+- xrm: funkcje narzędziowe dla zarządcy zasobów X
+
 %package devel
 Summary:	Header files for XCB util-xrm library
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki XCB util-xrm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libxcb-devel >= 1.4
@@ -39,13 +52,20 @@ Requires:	libxcb-devel >= 1.4
 %description devel
 Header files for XCB util-xrm library.
 
+%description devel -l pl.UTF-8
+Pliki nagłówkowe biblioteki XCB util-xrm.
+
 %package static
 Summary:	Static XCB util-xrm library
+Summary(pl.UTF-8):	Biblioteka statyczna XCB util-xrm
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static XCB util-xrm library.
+
+%description static -l pl.UTF-8
+Biblioteka statyczna XCB util-xrm.
 
 %prep
 %setup -q
