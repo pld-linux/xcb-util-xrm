@@ -11,6 +11,7 @@ URL:		https://github.com/Airblader/xcb-util-xrm
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake
 BuildRequires:	libtool
+# xcb xcb-aux
 BuildRequires:	libxcb-devel >= 1.4
 BuildRequires:	pkgconfig
 BuildRequires:	xcb-proto >= 1.6
@@ -97,11 +98,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog README
 %attr(755,root,root) %{_libdir}/libxcb-xrm.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libxcb-xrm.so.0
+%ghost %{_libdir}/libxcb-xrm.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libxcb-xrm.so
+%{_libdir}/libxcb-xrm.so
 %{_includedir}/xcb/xcb_xrm.h
 %{_pkgconfigdir}/xcb-xrm.pc
 
