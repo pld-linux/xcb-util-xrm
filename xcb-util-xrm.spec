@@ -2,7 +2,7 @@ Summary:	XCB util-xrm module
 Summary(pl.UTF-8):	Moduł XCB util-xrm
 Name:		xcb-util-xrm
 Version:	1.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 Source0:	https://github.com/Airblader/xcb-util-xrm/releases/download/v%{version}/%{name}-%{version}.tar.bz2
